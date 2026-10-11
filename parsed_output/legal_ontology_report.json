@@ -1,0 +1,452 @@
+{
+  "act_id": "consumer_protection_act_2019",
+  "method": "controlled ontology alias matching plus deterministic legal-cue/reference rules; no LLM-generated links",
+  "source_provisions_scanned": 277,
+  "candidate_entity_count": 53,
+  "candidate_entity_link_count": 48,
+  "entities_excluded_single_provision": [
+    "consumer_association",
+    "corrective_advertisement",
+    "defect",
+    "deficiency",
+    "district_collector",
+    "endorser",
+    "manufacturer",
+    "restrictive_trade_practice",
+    "supreme_court",
+    "unfair_contract"
+  ],
+  "persisted_entity_count": 38,
+  "persisted_entities_linked_to_multiple_provisions": 38,
+  "persisted_multi_provision_entity_ratio": 1.0,
+  "expansion_eligible_entity_count": 35,
+  "expansion_eligible_entity_ratio": 0.9210526315789473,
+  "expansion_max_provisions": 30,
+  "ontology_relationship_count": 351,
+  "explicit_cites_relationship_count": 85,
+  "relationship_type_counts": {
+    "IMPOSES_DUTY_ON": 155,
+    "DEFINES": 21,
+    "APPLIES_TO": 25,
+    "PROHIBITS": 10,
+    "GOVERNS_PROCEDURE_FOR": 61,
+    "PROVIDES_RELIEF": 10,
+    "ESTABLISHES": 16,
+    "GRANTS_POWER_TO": 17,
+    "ASSIGNS_JURISDICTION_TO": 5,
+    "PRESCRIBES_PENALTY_FOR": 13,
+    "APPEALS_TO": 7,
+    "EXEMPTS_OR_LIMITS": 4,
+    "MAKES_LIABLE": 7
+  },
+  "expansion_eligible_entities": [
+    {
+      "canonical_id": "appeal",
+      "name": "Appeal",
+      "entity_type": "LEGAL_PROCESS",
+      "provision_degree": 6
+    },
+    {
+      "canonical_id": "appropriate_laboratory",
+      "name": "Appropriate laboratory",
+      "entity_type": "PUBLIC_BODY",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "central_authority",
+      "name": "Central Consumer Protection Authority",
+      "entity_type": "PUBLIC_BODY",
+      "provision_degree": 20
+    },
+    {
+      "canonical_id": "central_council",
+      "name": "Central Consumer Protection Council",
+      "entity_type": "PUBLIC_BODY",
+      "provision_degree": 4
+    },
+    {
+      "canonical_id": "central_government",
+      "name": "Central Government",
+      "entity_type": "PUBLIC_BODY",
+      "provision_degree": 17
+    },
+    {
+      "canonical_id": "compensation",
+      "name": "Compensation",
+      "entity_type": "RELIEF_OR_SANCTION",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "complainant",
+      "name": "Complainant",
+      "entity_type": "PERSON_ROLE",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "complaint",
+      "name": "Consumer complaint",
+      "entity_type": "LEGAL_PROCESS",
+      "provision_degree": 25
+    },
+    {
+      "canonical_id": "consumer_dispute",
+      "name": "Consumer dispute",
+      "entity_type": "LEGAL_PROCESS",
+      "provision_degree": 8
+    },
+    {
+      "canonical_id": "consumer_rights",
+      "name": "Consumer rights",
+      "entity_type": "CONSUMER_ISSUE",
+      "provision_degree": 5
+    },
+    {
+      "canonical_id": "district_council",
+      "name": "District Consumer Protection Council",
+      "entity_type": "PUBLIC_BODY",
+      "provision_degree": 4
+    },
+    {
+      "canonical_id": "electronic_service_provider",
+      "name": "Electronic service provider",
+      "entity_type": "PERSON_ROLE",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "harm_injury",
+      "name": "Harm or injury",
+      "entity_type": "CONSUMER_ISSUE",
+      "provision_degree": 6
+    },
+    {
+      "canonical_id": "imprisonment",
+      "name": "Imprisonment",
+      "entity_type": "RELIEF_OR_SANCTION",
+      "provision_degree": 6
+    },
+    {
+      "canonical_id": "investigation",
+      "name": "Inquiry or investigation",
+      "entity_type": "LEGAL_PROCESS",
+      "provision_degree": 15
+    },
+    {
+      "canonical_id": "mediation",
+      "name": "Consumer mediation",
+      "entity_type": "LEGAL_PROCESS",
+      "provision_degree": 9
+    },
+    {
+      "canonical_id": "mediator",
+      "name": "Mediator",
+      "entity_type": "PERSON_ROLE",
+      "provision_degree": 9
+    },
+    {
+      "canonical_id": "misleading_advertisement",
+      "name": "False or misleading advertisement",
+      "entity_type": "CONSUMER_ISSUE",
+      "provision_degree": 5
+    },
+    {
+      "canonical_id": "opposite_party",
+      "name": "Opposite party",
+      "entity_type": "PERSON_ROLE",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "penalty",
+      "name": "Penalty",
+      "entity_type": "RELIEF_OR_SANCTION",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "product_liability",
+      "name": "Product liability",
+      "entity_type": "CONSUMER_ISSUE",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "product_manufacturer",
+      "name": "Product manufacturer",
+      "entity_type": "PERSON_ROLE",
+      "provision_degree": 6
+    },
+    {
+      "canonical_id": "product_seller",
+      "name": "Product seller",
+      "entity_type": "PERSON_ROLE",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "product_service_provider",
+      "name": "Product service provider",
+      "entity_type": "PERSON_ROLE",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "recall_withdrawal",
+      "name": "Recall or withdrawal of goods/services",
+      "entity_type": "RELIEF_OR_SANCTION",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "refund",
+      "name": "Refund",
+      "entity_type": "RELIEF_OR_SANCTION",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "regulator",
+      "name": "Regulator",
+      "entity_type": "PUBLIC_BODY",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "replacement",
+      "name": "Replacement",
+      "entity_type": "RELIEF_OR_SANCTION",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "review",
+      "name": "Review of an order",
+      "entity_type": "LEGAL_PROCESS",
+      "provision_degree": 7
+    },
+    {
+      "canonical_id": "spurious_goods",
+      "name": "Spurious goods",
+      "entity_type": "CONSUMER_ISSUE",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "state_commission",
+      "name": "State Commission",
+      "entity_type": "PUBLIC_BODY",
+      "provision_degree": 26
+    },
+    {
+      "canonical_id": "state_council",
+      "name": "State Consumer Protection Council",
+      "entity_type": "PUBLIC_BODY",
+      "provision_degree": 4
+    },
+    {
+      "canonical_id": "state_government",
+      "name": "State Government",
+      "entity_type": "PUBLIC_BODY",
+      "provision_degree": 12
+    },
+    {
+      "canonical_id": "trader",
+      "name": "Trader",
+      "entity_type": "PERSON_ROLE",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "unfair_trade_practice",
+      "name": "Unfair trade practice",
+      "entity_type": "CONSUMER_ISSUE",
+      "provision_degree": 8
+    }
+  ],
+  "multi_provision_entities": [
+    {
+      "canonical_id": "appeal",
+      "name": "Appeal",
+      "provision_degree": 6
+    },
+    {
+      "canonical_id": "appropriate_laboratory",
+      "name": "Appropriate laboratory",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "central_authority",
+      "name": "Central Consumer Protection Authority",
+      "provision_degree": 20
+    },
+    {
+      "canonical_id": "central_council",
+      "name": "Central Consumer Protection Council",
+      "provision_degree": 4
+    },
+    {
+      "canonical_id": "central_government",
+      "name": "Central Government",
+      "provision_degree": 17
+    },
+    {
+      "canonical_id": "compensation",
+      "name": "Compensation",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "complainant",
+      "name": "Complainant",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "complaint",
+      "name": "Consumer complaint",
+      "provision_degree": 25
+    },
+    {
+      "canonical_id": "consumer",
+      "name": "Consumer",
+      "provision_degree": 5
+    },
+    {
+      "canonical_id": "consumer_dispute",
+      "name": "Consumer dispute",
+      "provision_degree": 8
+    },
+    {
+      "canonical_id": "consumer_rights",
+      "name": "Consumer rights",
+      "provision_degree": 5
+    },
+    {
+      "canonical_id": "district_commission",
+      "name": "District Commission",
+      "provision_degree": 34
+    },
+    {
+      "canonical_id": "district_council",
+      "name": "District Consumer Protection Council",
+      "provision_degree": 4
+    },
+    {
+      "canonical_id": "electronic_service_provider",
+      "name": "Electronic service provider",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "harm_injury",
+      "name": "Harm or injury",
+      "provision_degree": 6
+    },
+    {
+      "canonical_id": "imprisonment",
+      "name": "Imprisonment",
+      "provision_degree": 6
+    },
+    {
+      "canonical_id": "investigation",
+      "name": "Inquiry or investigation",
+      "provision_degree": 15
+    },
+    {
+      "canonical_id": "mediation",
+      "name": "Consumer mediation",
+      "provision_degree": 9
+    },
+    {
+      "canonical_id": "mediator",
+      "name": "Mediator",
+      "provision_degree": 9
+    },
+    {
+      "canonical_id": "misleading_advertisement",
+      "name": "False or misleading advertisement",
+      "provision_degree": 5
+    },
+    {
+      "canonical_id": "national_commission",
+      "name": "National Commission",
+      "provision_degree": 32
+    },
+    {
+      "canonical_id": "opposite_party",
+      "name": "Opposite party",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "penalty",
+      "name": "Penalty",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "product_liability",
+      "name": "Product liability",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "product_manufacturer",
+      "name": "Product manufacturer",
+      "provision_degree": 6
+    },
+    {
+      "canonical_id": "product_seller",
+      "name": "Product seller",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "product_service_provider",
+      "name": "Product service provider",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "recall_withdrawal",
+      "name": "Recall or withdrawal of goods/services",
+      "provision_degree": 3
+    },
+    {
+      "canonical_id": "refund",
+      "name": "Refund",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "regulator",
+      "name": "Regulator",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "replacement",
+      "name": "Replacement",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "review",
+      "name": "Review of an order",
+      "provision_degree": 7
+    },
+    {
+      "canonical_id": "spurious_goods",
+      "name": "Spurious goods",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "state_commission",
+      "name": "State Commission",
+      "provision_degree": 26
+    },
+    {
+      "canonical_id": "state_council",
+      "name": "State Consumer Protection Council",
+      "provision_degree": 4
+    },
+    {
+      "canonical_id": "state_government",
+      "name": "State Government",
+      "provision_degree": 12
+    },
+    {
+      "canonical_id": "trader",
+      "name": "Trader",
+      "provision_degree": 2
+    },
+    {
+      "canonical_id": "unfair_trade_practice",
+      "name": "Unfair trade practice",
+      "provision_degree": 8
+    }
+  ],
+  "neo4j_verification": {
+    "entity_nodes": 38,
+    "linked_entities": 38,
+    "expansion_eligible_entities": 35,
+    "cites_relationships": 85
+  }
+}

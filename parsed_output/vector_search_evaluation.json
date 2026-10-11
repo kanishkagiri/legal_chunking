@@ -1,0 +1,554 @@
+[
+  {
+    "query": "Who can file a complaint when numerous consumers share the same interest?",
+    "expected_citations": [
+      "Section 2(5)"
+    ],
+    "top_k": [
+      {
+        "node_type": "Passage",
+        "citation": "Section 35(1)",
+        "text": "(1) A complaint, in relation to any goods sold or delivered or agreed to be sold or\ndelivered or any service provided or agreed to be provided, may be filed with a District\nCommission by—\n(a) the consumer,—\n(i) to whom such goods are sold or delivered or agreed to be sold or\ndelivered or such service is provided or agreed to be provided; or\n(ii) who alleges unfair trade practice in respect of such goods or service;\n(b) any recognised consumer association, whether the consumer to whom such\ngoods are sold or delivered or agreed to be sold or delivered or such service is provided\nor agreed to be provided, or who alleges unfair trade practice in respect of such goods\nor service, is a member of such association or not;\n(c) one or more consumers, where there are numerous consumers having the\nsame interest, with the permission of the District Commission, on behalf of, or for the\nbenefit of, all consumers so interested; or",
+        "passage_number": 1,
+        "passage_count": 2,
+        "score": 0.872331976890564,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 17",
+        "text": "A complaint relating to violation of consumer rights or unfair trade practices or\nfalse or misleading advertisements which are prejudicial to the interests of consumers as a\nclass, may be forwarded either in writing or in electronic mode, to any one of the authorities,\nnamely, the District Collector or the Commissioner of regional office or the Central Authority.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8602035045623779,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 16",
+        "text": "The District Collector (by whatever name called) may, on a complaint or on a\nreference made to him by the Central Authority or the Commissioner of a regional office,\ninquire into or investigate complaints regarding violation of rights of consumers as a class,\non matters relating to violations of consumer rights, unfair trade practices and false or\nmisleading advertisements, within his jurisdiction and submit his report to the Central Authority\nor to the Commissioner of a regional office, as the case may be.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8518672585487366,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 47(4)",
+        "text": "(4) A complaint shall be instituted in a State Commission within the limits of whose\njurisdiction,—\n(a) the opposite party or each of the opposite parties, where there are more than\none, at the time of the institution of the complaint, ordinarily resides or carries on\nbusiness or has a branch office or personally works for gain; or\n(b) any of the opposite parties, where there are more than one, at the time of the\ninstitution of the complaint, actually and voluntarily resides, or carries on business or\nhas a branch office or personally works for gain, provided in such case, the permission\nof the State Commission is given; or\n(c) the cause of action, wholly or in part, arises; or\n(d) the complainant resides or personally works for gain.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8476207256317139,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 2(5)",
+        "text": "(5) \"complainant\" means—\n(i) a consumer; or\n(ii) any voluntary consumer association registered under any law for the\ntime being in force; or\n(iii) the Central Government or any State Government; or\n(iv) the Central Authority; or\n(v) one or more consumers, where there are numerous consumers having\nthe same interest; or\n(vi) in case of death of a consumer, his legal heir or legal representative; or\n(vii) in case of a consumer being a minor, his parent or legal guardian;",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8455644845962524,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      }
+    ],
+    "expected_in_top_k": true
+  },
+  {
+    "query": "What can the District Commission do if the opposite party does not respond to a complaint?",
+    "expected_citations": [
+      "Section 38(3)"
+    ],
+    "top_k": [
+      {
+        "node_type": "Subsection",
+        "citation": "Section 34(2)",
+        "text": "(2) A complaint shall be instituted in a District Commission within the local limits of\nwhose jurisdiction,—\n(a) the opposite party or each of the opposite parties, where there are more than\none, at the time of the institution of the complaint, ordinarily resides or carries on\nbusiness or has a branch office or personally works for gain; or\n(b) any of the opposite parties, where there are more than one, at the time of the\ninstitution of the complaint, actually and voluntarily resides, or carries on business or\nhas a branch office, or personally works for gain, provided that in such case the\npermission of the District Commission is given; or\n(c) the cause of action, wholly or in part, arises; or\n(d) the complainant resides or personally works for gain.\nQualifications,\netc., of\nPresident and\nmembers of\nDistrict\nCommission.\nSalaries,\nallowances and\nother terms\nand conditions\nof service of\nPresident and\nmembers of\nDistrict\nCommission.\nTransitional\nprovision.\nVacancy in\noffice of\nmember of\nDistrict\nCommission.\nOfficers and\nother\nemployees of\nDistrict\nCommission.\nJurisdiction of\nDistrict\nCommission.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8785856366157532,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Passage",
+        "citation": "Section 38(3)",
+        "text": "(3) The District Commission shall, if the complaint admitted by it under sub-section (2)\nof section 36 relates to goods in respect of which the procedure specified in sub-section (2)\ncannot be followed, or if the complaint relates to any services,—\n(a) refer a copy of such complaint to the opposite party directing him to give his\nversion of the case within a period of thirty days or such extended period not exceeding\nfifteen days as may be granted by the District Commission;\n(b) if the opposite party, on receipt of a copy of the complaint, referred to him\nunder clause (a) denies or disputes the allegations contained in the complaint, or\nomits or fails to take any action to represent his case within the time given by the\nDistrict Commission, it shall proceed to settle the consumer dispute—\nProcedure on\nadmission of\ncomplaint.\n(i) on the basis of evidence brought to its notice by the complainant and\nthe opposite party, if the opposite party denies or disputes the allegations\ncontained in the complaint, or\n(ii) ex parte on the basis of evidence brought to its notice by the\ncomplainant, where the opposite party omits or fails to take any action to represent\nhis case within the time given by the Commission;",
+        "passage_number": 1,
+        "passage_count": 2,
+        "score": 0.866408109664917,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 69(1)",
+        "text": "(1) The District Commission, the State Commission or the National Commission\nshall not admit a complaint unless it is filed within two years from the date on which the\ncause of action has arisen.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8662542104721069,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 38(1)",
+        "text": "(1) The District Commission shall, on admission of a complaint, or in respect of\ncases referred for mediation on failure of settlement by mediation, proceed with such\ncomplaint.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8657863736152649,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 36(2)",
+        "text": "(2) On receipt of a complaint made under section 35, the District Commission may, by\norder, admit the complaint for being proceeded with or reject the same:\nProvided that a complaint shall not be rejected under this section unless an opportunity\nof being heard has been given to the complainant:\nProvided further that the admissibility of the complaint shall ordinarily be decided\nwithin twenty-one days from the date on which the complaint was filed.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8604432940483093,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      }
+    ],
+    "expected_in_top_k": true
+  },
+  {
+    "query": "How does the District Commission test goods when a defect needs laboratory analysis?",
+    "expected_citations": [
+      "Section 38(2)"
+    ],
+    "top_k": [
+      {
+        "node_type": "Passage",
+        "citation": "Section 38(2)",
+        "text": "(c) if the complaint alleges a defect in the goods which cannot be determined\nwithout proper analysis or test of the goods, obtain a sample of the goods from the\ncomplainant, seal it and authenticate it in the manner as may be prescribed and refer\nthe sample so sealed to the appropriate laboratory along with a direction that such\nlaboratory to make an analysis or test, whichever may be necessary, with a view to\nfinding out whether such goods suffer from any defect alleged in the complaint or\nfrom any other defect and to report its findings thereon to the District Commission\nwithin a period of forty-five days of the receipt of the reference or within such extended\nperiod as may be granted by it;\n(d) before any sample of the goods is referred to any appropriate laboratory\nunder clause (c), require the complainant to deposit to the credit of the Commission\nsuch fees as may be specified, for payment to the appropriate laboratory for carrying\nout the necessary analysis or test in relation to the goods in question;",
+        "passage_number": 2,
+        "passage_count": 3,
+        "score": 0.9085241556167603,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Passage",
+        "citation": "Section 39(1)",
+        "text": "(1) Where the District Commission is satisfied that the goods complained against\nsuffer from any of the defects specified in the complaint or that any of the allegations\ncontained in the complaint about the services or any unfair trade practices, or claims for\ncompensation under product liability are proved, it shall issue an order to the opposite party\ndirecting him to do one or more of the following, namely:—\n(a) to remove the defect pointed out by the appropriate laboratory from the\ngoods in question;\n(b) to replace the goods with new goods of similar description which shall be\nfree from any defect;\n(c) to return to the complainant the price, or, as the case may be, the charges paid\nby the complainant along with such interest on such price or charges as may be\ndecided;\n(d) to pay such amount as may be awarded by it as compensation to the consumer\nfor any loss or injury suffered by the consumer due to the negligence of the opposite\nparty:\nProvided that the District Commission shall have the power to grant punitive\ndamages in such circumstances as it deems fit;\n(e) to pay such amount as may be awarded by it as compensation in a product\nliability action under Chapter VI;",
+        "passage_number": 1,
+        "passage_count": 2,
+        "score": 0.8653769493103027,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Passage",
+        "citation": "Section 38(2)",
+        "text": "(e) remit the amount deposited to its credit under clause (d) to the appropriate\nlaboratory to enable it to carry out the analysis or test mentioned in clause (c) and on\nreceipt of the report from the appropriate laboratory, it shall forward a copy of the\nreport along with such remarks as it may feel appropriate to the opposite party;\n(f) if any of the parties disputes the correctness of the findings of the appropriate\nlaboratory, or disputes the correctness of the methods of analysis or test adopted by\nthe appropriate laboratory, require the opposite party or the complainant to submit in\nwriting his objections with regard to the report made by the appropriate laboratory;\n(g) give a reasonable opportunity to the complainant as well as the opposite\nparty of being heard as to the correctness or otherwise of the report made by the\nappropriate laboratory and also as to the objection made in relation thereto under\nclause (f) and issue an appropriate order under section 39.",
+        "passage_number": 3,
+        "passage_count": 3,
+        "score": 0.8555286526679993,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 38(9)",
+        "text": "(9) For the purposes of this section, the District Commission shall have the same\npowers as are vested in a civil court under the Code of Civil Procedure, 1908 while trying a\nsuit in respect of the following matters, namely:—\n(a) the summoning and enforcing the attendance of any defendant or witness\nand examining the witness on oath;\n(b) requiring the discovery and production of any document or other material\nobject as evidence;\n(c) receiving of evidence on affidavits;\n(d) the requisitioning of the report of the concerned analysis or test from the\nappropriate laboratory or from any other relevant source;\n(e) issuing of commissions for the examination of any witness, or document;\nand\n5 of 1908.\n(f) any other matter which may be prescribed by the Central Government.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8456670045852661,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 16",
+        "text": "The District Collector (by whatever name called) may, on a complaint or on a\nreference made to him by the Central Authority or the Commissioner of a regional office,\ninquire into or investigate complaints regarding violation of rights of consumers as a class,\non matters relating to violations of consumer rights, unfair trade practices and false or\nmisleading advertisements, within his jurisdiction and submit his report to the Central Authority\nor to the Commissioner of a regional office, as the case may be.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8417092561721802,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      }
+    ],
+    "expected_in_top_k": true
+  },
+  {
+    "query": "What penalty applies when adulterated goods cause the death of a consumer?",
+    "expected_citations": [
+      "Section 90(1)"
+    ],
+    "top_k": [
+      {
+        "node_type": "Subsection",
+        "citation": "Section 90(1)",
+        "text": "(1) Whoever, by himself or by any other person on his behalf, manufactures for\nsale or stores or sells or distributes or imports any product containing an adulterant shall be\npunished, if such act—\n(a) does not result in any injury to the consumer, with imprisonment for a term\nwhich may extend to six months and with fine which may extend to one lakh rupees;\n(b) causing injury not amounting to grievous hurt to the consumer, with\nimprisonment for a term which may extend to one year and with fine which may extend\nto three lakh rupees;\n(c) causing injury resulting in grievous hurt to the consumer, with imprisonment\nfor a term which may extend to seven years and with fine which may extend to five lakh\nrupees; and\n(d) results in the death of a consumer, with imprisonment for a term which shall\nnot be less than seven years, but which may extend to imprisonment for life and with\nfine which shall not be less than ten lakh rupees.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8729276657104492,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 91(1)",
+        "text": "(1) Whoever, by himself or by any other person on his behalf, manufactures for\nsale or stores or sells or distributes or imports any spurious goods shall be punished, if such\nact—\n(a) causing injury not amounting to grievous hurt to the consumer, with\nimprisonment for a term which may extend to one year and with fine which may extend\nto three lakh rupees;\nPenalty for\nnon-\ncompliance of\ndirection of\nCentral\nAuthority.\nPunishment\nfor false or\nmisleading\nadvertisement.\nPunishment\nfor\nmanufacturing\nfor sale or\nstoring, selling\nor distributing\nor importing\nproducts\ncontaining\nadulterant.\nPunishment\nfor\nmanufacturing\nfor sale or for\nstoring or\nselling or\ndistributing or\nimporting\nspurious goods.\n45 of 1860.\n(b) causing injury resulting in grievous hurt to the consumer, with imprisonment\nfor a term which may extend to seven years and with fine which may extend to five lakh\nrupees;\n(c) results in the death of a consumer, with imprisonment for a term which shall\nnot be less than seven years, but may extend to imprisonment for life and with fine\nwhich shall not be less than ten lakh rupees.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8638484477996826,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 89",
+        "text": "Any manufacturer or service provider who causes a false or misleading\nadvertisement to be made which is prejudicial to the interest of consumers shall be punished\nwith imprisonment for a term which may extend to two years and with fine which may extend\nto ten lakh rupees; and for every subsequent offence, be punished with imprisonment for a\nterm which may extend to five years and with fine which may extend to fifty lakh rupees.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8462458848953247,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 38(12)",
+        "text": "(12) In the event of death of a complainant who is a consumer or of the opposite party\nagainst whom the complaint has been filed, the provisions of Order XXII of the First Schedule\nto the Code of Civil Procedure, 1908 shall apply subject to the modification that every\nreference therein to the plaintiff and the defendant shall be construed as reference to a\ncomplainant or the opposite party, as the case may be.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8461220264434814,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 90(3)",
+        "text": "(3) Notwithstanding the punishment under sub-section (1), the court may, in case of\nfirst conviction, suspend any licence issued to the person referred to in that sub-section,\nunder any law for the time being in force, for a period up to two years, and in case of second\nor subsequent conviction, cancel the licence.\nExplanation.—For the purposes of this section,—\n(a) \"adulterant\" means any material including extraneous matter which is\nemployed or used for making a product unsafe;\n(b) \"grievous hurt\" shall have the same meaning as assigned to it in section 320\nof the Indian Penal Code.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8400238752365112,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      }
+    ],
+    "expected_in_top_k": true
+  },
+  {
+    "query": "Can the Central Authority order a misleading advertisement to be stopped or changed?",
+    "expected_citations": [
+      "Section 21(1)"
+    ],
+    "top_k": [
+      {
+        "node_type": "Subsection",
+        "citation": "Section 21(1)",
+        "text": "(1) Where the Central Authority is satisfied after investigation that any\nadvertisement is false or misleading and is prejudicial to the interest of any consumer or is in\ncontravention of consumer rights, it may, by order, issue directions to the concerned trader\nor manufacturer or endorser or advertiser or publisher, as the case may be, to discontinue\nsuch advertisement or to modify the same in such manner and within such time as may be\nspecified in that order.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.9038529396057129,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 21(3)",
+        "text": "(3) Notwithstanding any order under sub-sections (1) and (2), where the Central\nAuthority deems it necessary, it may, by order, prohibit the endorser of a false or misleading\nadvertisement from making endorsement of any product or service for a period which may\nextend to one year:\nPower of\nCentral\nAuthority to\nrefer matter\nfor\ninvestigation\nor to other\nRegulator.\nPower of\nCentral\nAuthority to\nrecall goods,\netc.\nPower of\nCentral\nAuthority to\nissue\ndirections and\npenalties\nagainst false\nor misleading\nadvertisements.\nProvided that the Central Authority may, for every subsequent contravention, prohibit\nsuch endorser from making endorsement in respect of any product or service for a period\nwhich may extend to three years.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8939592242240906,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 21(6)",
+        "text": "(6) No person shall be liable to such penalty if he proves that he had published or\narranged for the publication of such advertisement in the ordinary course of his business:\nProvided that no such defence shall be available to such person if he had previous\nknowledge of the order passed by the Central Authority for withdrawal or modification of\nsuch advertisement.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8692103624343872,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 19(1)",
+        "text": "(1) The Central Authority may, after receiving any information or complaint or\ndirections from the Central Government or of its own motion, conduct or cause to be conducted\na preliminary inquiry as to whether there exists a prima facie case of violation of consumer\nrights or any unfair trade practice or any false or misleading advertisement, by any person,\nwhich is prejudicial to the public interest or to the interests of consumers and if it is satisfied\nthat there exists a prima facie case, it shall cause investigation to be made by the Director-\nGeneral or by the District Collector.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.861724317073822,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 10(1)",
+        "text": "(1) The Central Government shall, by notification, establish with effect from such\ndate as it may specify in that notification, a Central Consumer Protection Authority to be\nknown as the Central Authority to regulate matters relating to violation of rights of consumers,\nunfair trade practices and false or misleading advertisements which are prejudicial to the\ninterests of public and consumers and to promote, protect and enforce the rights of consumers\nas a class.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8602460622787476,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      }
+    ],
+    "expected_in_top_k": true
+  },
+  {
+    "query": "Can the Central Government make rules to carry out the Act?",
+    "expected_citations": [
+      "Section 101(1)"
+    ],
+    "top_k": [
+      {
+        "node_type": "Subsection",
+        "citation": "Section 101(1)",
+        "text": "(1) The Central Government may, by notification, make rules for carrying out any\nof the provisions contained in this Act.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8977833390235901,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 23",
+        "text": "The Central Government may, if it considers necessary, by notification, designate\nany statutory authority or body to exercise the powers and perform the functions of the\nCentral Authority referred to in section 10.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8761102557182312,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 102(1)",
+        "text": "(1) The State Governments may, by notification, make rules for carrying out the\nprovisions of this Act:\nProvided that the Central Government may, frame model rules in respect of all or any of\nthe matters with respect to which the State Government may make rules under this section,\nand where any such model rules have been framed in respect of any such matter, they shall\napply to the State until the rules in respect of that matter is made by the State Government\nand while making any such rules, so far as is practicable, they shall conform to such model\nrules.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8739855289459229,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 25",
+        "text": "The Central Government may, after due appropriation made by Parliament by law in\nthis behalf, make to the Central Authority grants of such sums of money as that Government\nmay think fit for being utilised for the purposes of this Act.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8722164630889893,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 11",
+        "text": "The Central Government may, by notification, make rules to provide for the\nqualifications for appointment, method of recruitment, procedure for appointment, term of\noffice, salaries and allowances, resignation, removal and other terms and conditions of the\nservice of the Chief Commissioner and Commissioners of the Central Authority.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8704432249069214,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      }
+    ],
+    "expected_in_top_k": true
+  },
+  {
+    "query": "What matters may Central Government rules cover about commission members and their appointments?",
+    "expected_citations": [
+      "Section 101(2)"
+    ],
+    "top_k": [
+      {
+        "node_type": "Section",
+        "citation": "Section 11",
+        "text": "The Central Government may, by notification, make rules to provide for the\nqualifications for appointment, method of recruitment, procedure for appointment, term of\noffice, salaries and allowances, resignation, removal and other terms and conditions of the\nservice of the Chief Commissioner and Commissioners of the Central Authority.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.9148149490356445,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 43",
+        "text": "The Central Government may, by notification, make rules to provide for the\nqualification for appointment, method of recruitment, procedure of appointment, term of\noffice, resignation and removal of the President and members of the State Commission.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.9039006233215332,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 29",
+        "text": "The Central Government may, by notification, make rules to provide for the\nqualifications, method of recruitment, procedure for appointment, term of office, resignation\nand removal of the President and members of the District Commission.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8956872820854187,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 55(1)",
+        "text": "(1) The Central Government may, by notification, make rules to provide for\nqualifications, appointment, term of office, salaries and allowances, resignation, removal\nand other terms and conditions of service of the President and members of the National\nCommission:\nProvided that the President and members of the National Commission shall hold office\nfor such term as specified in the rules made by the Central Government but not exceeding\nfive years from the date on which he enters upon his office and shall be eligible for\nre-appointment:\nProvided further that no President or members shall hold office as such after he has\nattained such age as specified in the rules made by the Central Government which shall not\nexceed,—\n(a) in the case of the President, the age of seventy years;\n(b) in the case of any other member, the age of sixty-seven years.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8907757997512817,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 14(2)",
+        "text": "(2) The Chief Commissioner shall have the powers of general superintendence, direction\nand control in respect of all administrative matters of the Central Authority:\nProvided that the Chief Commissioner may delegate such of his powers relating to\nadministrative matters of the Central Authority, as he may think fit, to any Commissioner\n(including Commissioner of a regional office) or any other officer of the Central Authority.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8744677305221558,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      }
+    ],
+    "expected_in_top_k": false
+  },
+  {
+    "query": "Which unfair or deceptive practices, such as false claims about goods, are prohibited?",
+    "expected_citations": [
+      "Section 2(47)"
+    ],
+    "top_k": [
+      {
+        "node_type": "Passage",
+        "citation": "Section 2(47)",
+        "text": "(47) \"unfair trade practice\" means a trade practice which, for the purpose of\npromoting the sale, use or supply of any goods or for the provision of any service,\nadopts any unfair method or unfair or deceptive practice including any of the following\npractices, namely:—\n(i) making any statement, whether orally or in writing or by visible\nrepresentation including by means of electronic record, which—\n(a) falsely represents that the goods are of a particular standard,\nquality, quantity, grade, composition, style or model;\n(b) falsely represents that the services are of a particular standard,\nquality or grade;\n(c) falsely represents any re-built, second-hand, renovated,\nreconditioned or old goods as new goods;\n(d) represents that the goods or services have sponsorship, approval,\nperformance, characteristics, accessories, uses or benefits which such\ngoods or services do not have;\n(e) represents that the seller or the supplier has a sponsorship or\napproval or affiliation which such seller or supplier does not have;\n(f) makes a false or misleading representation concerning the need\nfor, or the usefulness of, any goods or services;",
+        "passage_number": 1,
+        "passage_count": 7,
+        "score": 0.8719007968902588,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Section",
+        "citation": "Section 17",
+        "text": "A complaint relating to violation of consumer rights or unfair trade practices or\nfalse or misleading advertisements which are prejudicial to the interests of consumers as a\nclass, may be forwarded either in writing or in electronic mode, to any one of the authorities,\nnamely, the District Collector or the Commissioner of regional office or the Central Authority.",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8397527933120728,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Passage",
+        "citation": "Section 2(47)",
+        "text": "(j) gives false or misleading facts disparaging the goods, services or trade of\nanother person.\nExplanation.—For the purposes of this sub-clause, a statement that is,—\n(A) expressed on an article offered or displayed for sale, or on its wrapper or\ncontainer; or\n(B) expressed on anything attached to, inserted in, or accompanying, an article\noffered or displayed for sale, or on anything on which the article is mounted for\ndisplay or sale; or\n(C) contained in or on anything that is sold, sent, delivered, transmitted or in\nany other manner whatsoever made available to a member of the public,\nshall be deemed to be a statement made to the public by, and only by, the person who had\ncaused the statement to be so expressed, made or contained;",
+        "passage_number": 4,
+        "passage_count": 7,
+        "score": 0.8343859910964966,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Subsection",
+        "citation": "Section 2(28)",
+        "text": "(28) \"misleading advertisement\" in relation to any product or service, means an\nadvertisement, which—\n(i) falsely describes such product or service; or\n(ii) gives a false guarantee to, or is likely to mislead the consumers as to\nthe nature, substance, quantity or quality of such product or service; or\n(iii) conveys an express or implied representation which, if made by the\nmanufacturer or seller or service provider thereof, would constitute an unfair\ntrade practice; or\n(iv) deliberately conceals important information;",
+        "passage_number": null,
+        "passage_count": null,
+        "score": 0.8306488990783691,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      },
+      {
+        "node_type": "Passage",
+        "citation": "Section 35(1)",
+        "text": "(1) A complaint, in relation to any goods sold or delivered or agreed to be sold or\ndelivered or any service provided or agreed to be provided, may be filed with a District\nCommission by—\n(a) the consumer,—\n(i) to whom such goods are sold or delivered or agreed to be sold or\ndelivered or such service is provided or agreed to be provided; or\n(ii) who alleges unfair trade practice in respect of such goods or service;\n(b) any recognised consumer association, whether the consumer to whom such\ngoods are sold or delivered or agreed to be sold or delivered or such service is provided\nor agreed to be provided, or who alleges unfair trade practice in respect of such goods\nor service, is a member of such association or not;\n(c) one or more consumers, where there are numerous consumers having the\nsame interest, with the permission of the District Commission, on behalf of, or for the\nbenefit of, all consumers so interested; or",
+        "passage_number": 1,
+        "passage_count": 2,
+        "score": 0.8288801908493042,
+        "act_title": "Consumer Protection Act, 2019",
+        "source_url": "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "source_publisher": "Ministry of Law and Justice, Legislative Department, Government of India",
+        "source_publication_date": "2019-08-09"
+      }
+    ],
+    "expected_in_top_k": true
+  }
+]
