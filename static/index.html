@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGALGUARD</title>
+  <meta name="description" content="Legal research assistant for the Consumer Protection Act, 2019.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-crest" aria-hidden="true">LG</div>
+        <div>
+          <h1 class="brand-title">LEGALGUARD</h1>
+          <span class="brand-subtitle">Consumer Protection Act, 2019</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-layout">
+    <!-- Search / Query Panel -->
+    <section class="query-section glass-panel">
+      <div class="section-header">
+        <h2>Ask a question</h2>
+        <span class="helper-text">Search the Consumer Protection Act, 2019</span>
+      </div>
+
+      <!-- Mode Selector -->
+      <div class="mode-selector-wrapper">
+        <label class="input-label">Retrieval Mode:</label>
+        <select id="mode-select" aria-label="Retrieval mode">
+          <option value="graph" selected>Graph Hybrid</option>
+          <option value="keyword">Keyword</option>
+          <option value="vector">Vector</option>
+        </select>
+      </div>
+
+      <!-- Query Input -->
+      <div class="input-group">
+        <textarea id="query-input" rows="3" placeholder="e.g., What can the Central Authority do about a misleading advertisement? (or Section 21)..."></textarea>
+        <div class="input-actions">
+          <div class="action-buttons">
+            <button id="submit-btn" class="btn btn-primary">
+              <span id="btn-text">Ask</span>
+              <svg id="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span id="btn-spinner" class="spinner hidden"></span>
+            </button>
+          </div>
+        </div>
+        <p class="query-status" role="status" aria-live="polite">
+          <span id="query-status-text"></span>
+          <span id="query-timer" class="query-timer"></span>
+        </p>
+      </div>
+
+    </section>
+
+    <!-- 3-Mode Comparison Section -->
+    <section id="comparison-section" class="comparison-section glass-panel hidden">
+      <div class="comparison-header">
+        <div>
+          <h2>3-Mode Retrieval Comparison Matrix</h2>
+          <span class="helper-text">Side-by-side comparison of Keyword vs Vector vs Graph Hybrid modes and statutory synthesis</span>
+        </div>
+        <div id="comparison-best-mode" class="badge badge-gold">Top Recommended Mode: Loading</div>
+      </div>
+
+      <!-- Cross-mode metrics banner -->
+      <div class="comparison-summary-bar">
+        <div class="summary-metric">
+          <span class="metric-label">All Citations Discovered</span>
+          <span id="metric-union-citations" class="metric-value">--</span>
+        </div>
+        <div class="summary-metric">
+          <span class="metric-label">Consensus Citations (All 3 Modes)</span>
+          <span id="metric-common-citations" class="metric-value">--</span>
+        </div>
+        <div class="summary-metric verdict-metric">
+          <span class="metric-label">Comparative Selection Verdict</span>
+          <span id="metric-mode-verdict" class="metric-value" style="font-family: inherit; font-size: 0.88rem; font-weight: 500; color: #f1f5f9;">Evaluating...</span>
+        </div>
+      </div>
+
+      <!-- 3 Columns Grid -->
+      <div class="comparison-grid">
+        <!-- Keyword Column -->
+        <div class="mode-column" id="col-keyword">
+          <div class="column-header">
+            <span class="column-title">Keyword Mode</span>
+            <span class="column-sub">Full-Text BM25 Index</span>
+          </div>
+          <div class="column-advantage-box">
+            <h4>Why This Mode Is Better</h4>
+            <div id="advantage-keyword" class="column-advantage-text"></div>
+          </div>
+          <div class="column-answer-box">
+            <h4>Answer</h4>
+            <p id="ans-keyword" class="column-answer-text"></p>
+          </div>
+          <div class="column-evidence-box">
+            <h4>Retrieved Citations</h4>
+            <div id="cites-keyword" class="column-citations-list"></div>
+          </div>
+        </div>
+
+        <!-- Vector Column -->
+        <div class="mode-column" id="col-vector">
+          <div class="column-header">
+            <span class="column-title">Vector Mode</span>
+            <span class="column-sub">Dense BGE Embeddings</span>
+          </div>
+          <div class="column-advantage-box">
+            <h4>Why This Mode Is Better</h4>
+            <div id="advantage-vector" class="column-advantage-text"></div>
+          </div>
+          <div class="column-answer-box">
+            <h4>Answer</h4>
+            <p id="ans-vector" class="column-answer-text"></p>
+          </div>
+          <div class="column-evidence-box">
+            <h4>Retrieved Citations</h4>
+            <div id="cites-vector" class="column-citations-list"></div>
+          </div>
+        </div>
+
+        <!-- Graph Column -->
+        <div class="mode-column highlight-column" id="col-graph">
+          <div class="column-header">
+            <span class="column-title">Graph Hybrid Mode</span>
+            <span class="column-sub">Vector + Ontology & CITES Expansion</span>
+          </div>
+          <div class="column-advantage-box">
+            <h4>Why This Mode Is Better</h4>
+            <div id="advantage-graph" class="column-advantage-text"></div>
+          </div>
+          <div class="column-answer-box">
+            <h4>Answer</h4>
+            <p id="ans-graph" class="column-answer-text"></p>
+          </div>
+          <div class="column-evidence-box">
+            <h4>Retrieved Citations & Graph Bridges</h4>
+            <div id="cites-graph" class="column-citations-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Response / Verification Results -->
+    <section id="results-container" class="results-section hidden">
+      <!-- Synthesized Answer Card -->
+      <div class="glass-panel answer-panel">
+        <div class="panel-header">
+          <h3>Answer</h3>
+        </div>
+        <div id="synthesized-answer" class="answer-text"></div>
+        <div class="answer-metadata" id="answer-meta"></div>
+      </div>
+
+      <!-- Audited Atomic Claims Card -->
+      <div class="glass-panel claims-panel" id="claims-panel">
+        <div class="section-title-row">
+          <div style="display: flex; align-items: center; gap: 0.6rem;">
+            <h3>Atomic Claims & Evidence Review</h3>
+            <span class="badge badge-gold" id="claim-count">0</span>
+          </div>
+          <span class="helper-text">Each statement is checked against retrieved statutory text</span>
+        </div>
+        <div id="claims-list" class="claims-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- Evidentiary Bundle & Graph Navigation Tabs -->
+      <div class="glass-panel evidence-panel">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="tab-evidence">Retrieved Provisions (<span id="evidence-count">0</span>)</button>
+          <button class="tab-btn" data-tab="tab-graph">Knowledge Graph Provenance</button>
+          <button class="tab-btn" data-tab="tab-audit">System & Retrieval Trace</button>
+        </div>
+
+        <div id="tab-evidence" class="tab-pane active">
+          <div id="evidence-list" class="evidence-list">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <div id="tab-graph" class="tab-pane">
+          <div id="graph-details" class="graph-details">
+            <p class="placeholder-text">Graph provenance details will appear here when running in Graph Hybrid mode.</p>
+          </div>
+        </div>
+
+        <div id="tab-audit" class="tab-pane">
+          <pre id="audit-trace-json" class="code-view"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Provision Modal -->
+  <div id="provision-modal" class="modal-overlay hidden">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <div class="modal-titles">
+          <span class="badge badge-gold" id="modal-citation">Section</span>
+          <h3 id="modal-chapter">Chapter Title</h3>
+        </div>
+        <button id="modal-close-btn" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="official-meta-box">
+          <div><strong>Act:</strong> <span id="modal-act-title">Consumer Protection Act, 2019</span></div>
+          <div><strong>Publisher:</strong> <span id="modal-publisher">Government of India</span></div>
+          <div><strong>Date:</strong> <span id="modal-date">2019-08-09</span></div>
+          <div><strong>Official PDF:</strong> <a id="modal-pdf-link" href="#" target="_blank" rel="noopener">Download Gazette PDF ↗</a></div>
+        </div>
+        <div class="statutory-text-box">
+          <h4>Full Provision Text</h4>
+          <div id="modal-text" class="statutory-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=8"></script>
+</body>
+</html>

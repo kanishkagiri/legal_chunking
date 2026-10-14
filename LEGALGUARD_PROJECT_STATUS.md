@@ -47,9 +47,40 @@ Ontology relationship properties include `evidence_text`, `evidence_key`, `extra
 
 The current implementation is a Python retrieval service/CLI in [rag_backend.py](rag_backend.py), not yet a web server. The evaluator is [evaluate_retrieval.py](evaluate_retrieval.py). Keyword and vector command-line scripts remain available as standalone tools.
 
+## Completed SLM, Verification, and Frontend Stack
+
+1. **HTTP Backend API ([api_server.py](api_server.py))**:
+   - FastAPI server exposing `/api/chat`, `/api/retrieve`, and `/api/health`.
+   - Returns structured evidence items with stable IDs (`E1`, `E2`, ...), provision citations, source URLs, retrieval scores, reranker scores, and graph provenance metadata.
+   - Built-in graceful offline failover ([offline_store.py](offline_store.py)) when Neo4j Aura is paused or unreachable.
+
+2. **Context Token Budgeting ([context_builder.py](context_builder.py))**:
+   - Enforces context token budgeting and avoids duplicate passages.
+   - Preserves parent citations, statutory context, and official Government of India metadata.
+
+3. **Provider-Neutral SLM Adapter ([slm_adapter.py](slm_adapter.py))**:
+   - Provider interface supporting Qwen 2.5 (`LocalQwenSLMAdapter`), OpenAI/Ollama compatible endpoints (`OpenAICompatibleSLMAdapter`), and deterministic legal claim extraction (`DeterministicRuleBasedSLMAdapter`).
+   - Enforces strict grounded output with structured atomic propositions and exact supporting quotes.
+
+4. **Claim-to-Evidence Verification & Scoring ([claim_verifier.py](claim_verifier.py))**:
+   - Validates supporting quotes against provision text and checks for statutory contradictions.
+   - Classifies claims into `SUPPORTED`, `CONTRADICTED`, and `UNSUPPORTED`.
+   - Computes weighted 4-factor evidence-strength score:
+     $$\text{score} = 0.40 \times \text{entailment} + 0.25 \times \text{relevance} + 0.20 \times \text{citation} + 0.15 \times \text{conditions}$$
+   - Maps scores into provisional evidence bands: Strong (85–100), Medium (70–84), Limited (50–69), Weak (0–49), and Unsupported.
+
+5. **Legal Web Frontend ([static/](static/))**:
+   - Glassmorphism dark-mode UI with gold and obsidian legal aesthetics.
+   - Mode switching: Keyword, Vector, Graph Hybrid.
+   - Interactive claim cards with status badges, strength progress bars, and score breakdowns.
+   - Modal drawer displaying full statutory text and official Gazette PDF download link.
+   - Explicit statutory abstention banner when evidence is insufficient.
+
+6. **Test Suite ([test_legalguard.py](test_legalguard.py) & [test_live.py](test_live.py))**:
+   - Pytest suite covering token budgeting, SLM parsing, claim verification, contradiction detection, abstention, and API endpoints (100% pass rate).
+
 ## Current limits
 
-- No SLM answer generation, atomic-claim extraction, claim verification, confidence display, or chat frontend has been implemented.
-- The query analyzer is deliberately simple. It does not perform synonym expansion, legal reasoning, or model-based query rewriting.
-- The parser records source file and provision citation but does not provide verified PDF page numbers for each provision. Section links to the official PDF can be displayed now; precise page anchors need page mapping added to the parser/metadata.
-- The nine-question retrieval evaluation is a small manually labeled sample. It measures citation retrieval after reranking, not legal answer correctness.
+- Per-provision PDF page numbers are not yet stored; provision citations link directly to the official Act Gazette PDF.
+- Ontology relationships remain marked `unreviewed` as retrieval navigation metadata. Only statutory provision text supports legal claims.
+

@@ -109,13 +109,25 @@ def _load_embedder():
     return TextEmbedding(model_name=EMBEDDING_MODEL, cache_dir=str(ROOT / ".model_cache"), threads=2)
 
 
+import time
+_LAST_NEO4J_FAILURE = 0.0
+
+
 def _graph_driver():
+    global _LAST_NEO4J_FAILURE
+    if time.time() - _LAST_NEO4J_FAILURE < 30.0:
+        raise RuntimeError("Neo4j recently unreachable; fast-failing to offline store.")
     from neo4j import GraphDatabase
 
     uri, username, password = (os.getenv("NEO4J_URI"), os.getenv("NEO4J_USERNAME"), os.getenv("NEO4J_PASSWORD"))
     if not all((uri, username, password)):
         raise RuntimeError("Set NEO4J_URI, NEO4J_USERNAME, and NEO4J_PASSWORD in .env")
-    return GraphDatabase.driver(uri, auth=(username, password))
+    return GraphDatabase.driver(uri, auth=(username, password), connection_timeout=2.0)
+
+
+def record_neo4j_failure():
+    global _LAST_NEO4J_FAILURE
+    _LAST_NEO4J_FAILURE = time.time()
 
 
 def _fallback_analysis(question: str) -> dict[str, Any]:
@@ -212,10 +224,19 @@ def _load_reranker():
 def _rerank(reranker: Any, query: str, candidates: list[dict[str, Any]], top_k: int) -> list[dict[str, Any]]:
     if not candidates:
         return []
+    import math
+
     documents = [f"{item.get('citation', '')} | {item.get('text', '')}" for item in candidates]
     scores = list(reranker.rerank(query, documents, batch_size=32))
     for item, score in zip(candidates, scores):
-        item["reranker_score"] = float(score)
+        raw_score = float(score)
+        # Normalize neural cross-encoder logit into [0.0, 1.0] via sigmoid
+        try:
+            norm_score = 1.0 / (1.0 + math.exp(-raw_score))
+        except OverflowError:
+            norm_score = 0.0 if raw_score < 0 else 1.0
+        item["raw_reranker_score"] = round(raw_score, 4)
+        item["reranker_score"] = round(float(norm_score), 4)
     return sorted(candidates, key=lambda item: item["reranker_score"], reverse=True)[:top_k]
 
 
@@ -240,36 +261,61 @@ class LegalRAGRetriever:
         analysis = self.analyzer(question)
         normalized = analysis.get("normalized_query") or question
         candidates: dict[str, dict[str, Any]] = {}
-        driver = _graph_driver()
+        using_fallback = False
+
         try:
-            driver.verify_connectivity()
-            with driver.session() as session:
-                if mode == "keyword":
-                    expression = _keyword_expression(analysis)
-                    if expression:
-                        for record in session.run(KEYWORD_QUERY, search_query=expression, limit=candidate_limit, act_id=ACT_ID):
-                            _merge_candidate(candidates, _hit_from_record(record, "keyword"))
-                else:
-                    if self.embedder is None:
-                        self.embedder = _load_embedder()
-                    vector = _embed_query(self.embedder, normalized)
-                    seed_limit = candidate_limit if mode == "vector" else max(1, min(candidate_limit // 2, 12))
-                    seeds = [_hit_from_record(row, "vector") for row in session.run(
-                        VECTOR_QUERY, embedding=vector, act_id=ACT_ID, limit=seed_limit
-                    )]
-                    for seed in seeds:
-                        _merge_candidate(candidates, seed)
-                    if mode == "graph":
-                        expansion_budget = max(0, candidate_limit - len(seeds))
-                        for item in _expand_graph(session, seeds, ACT_ID, expansion_budget):
-                            _merge_candidate(candidates, item)
-        finally:
-            driver.close()
+            driver = _graph_driver()
+            try:
+                driver.verify_connectivity()
+                with driver.session() as session:
+                    if mode == "keyword":
+                        expression = _keyword_expression(analysis)
+                        if expression:
+                            for record in session.run(KEYWORD_QUERY, search_query=expression, limit=candidate_limit, act_id=ACT_ID):
+                                _merge_candidate(candidates, _hit_from_record(record, "keyword"))
+                    else:
+                        if self.embedder is None:
+                            self.embedder = _load_embedder()
+                        vector = _embed_query(self.embedder, normalized)
+                        seed_limit = candidate_limit if mode == "vector" else max(1, min(candidate_limit // 2, 12))
+                        seeds = [_hit_from_record(row, "vector") for row in session.run(
+                            VECTOR_QUERY, embedding=vector, act_id=ACT_ID, limit=seed_limit
+                        )]
+                        for seed in seeds:
+                            _merge_candidate(candidates, seed)
+                        if mode == "graph":
+                            expansion_budget = max(0, candidate_limit - len(seeds))
+                            for item in _expand_graph(session, seeds, ACT_ID, expansion_budget):
+                                _merge_candidate(candidates, item)
+            finally:
+                driver.close()
+        except Exception as e:
+            # Fall back to offline parsed store if Neo4j is paused or unavailable
+            from offline_store import OfflineLegalStore
+            using_fallback = True
+            record_neo4j_failure()
+            store = OfflineLegalStore(embedder=self.embedder)
+            if mode == "keyword":
+                for hit in store.search_keyword(normalized, limit=candidate_limit):
+                    _merge_candidate(candidates, hit)
+            elif mode == "vector":
+                for hit in store.search_vector(normalized, limit=candidate_limit):
+                    _merge_candidate(candidates, hit)
+            elif mode == "graph":
+                seed_limit = max(1, min(candidate_limit // 2, 12))
+                seeds = store.search_vector(normalized, limit=seed_limit)
+                for seed in seeds:
+                    _merge_candidate(candidates, seed)
+                expansion_budget = max(0, candidate_limit - len(seeds))
+                for exp_item in store.expand_graph(seeds, limit=expansion_budget):
+                    _merge_candidate(candidates, exp_item)
 
         items = list(candidates.values())
         if self.reranker is None:
             self.reranker = _load_reranker()
         ranked = _rerank(self.reranker, normalized, items, top_k)
+        for idx, item in enumerate(ranked, start=1):
+            item["evidence_id"] = f"E{idx}"
         return {
             "question": question,
             "normalized_query": normalized,
@@ -278,6 +324,7 @@ class LegalRAGRetriever:
             "candidate_count": len(items),
             "top_k": ranked,
             "answer_rules": ABSTENTION_RULES,
+            "backend_engine": "offline_store_fallback" if using_fallback else "neo4j_live",
             "stopped_after": "reranked_top_k_before_generation",
         }
 
